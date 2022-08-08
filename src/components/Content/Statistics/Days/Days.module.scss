@@ -1,0 +1,11 @@
+.container {
+    @apply flex flex-row flex-wrap justify-around lg:justify-between bg-indigo-200 border-zinc-300 rounded-3xl p-7 relative;
+
+    &::before {
+        @apply bg-indigo-300 w-full h-full absolute shadow-xl rounded-3xl;
+        content: '';
+        top: 7px;
+        left: 0;
+        z-index: -1;
+    }
+}

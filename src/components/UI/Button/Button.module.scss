@@ -1,0 +1,16 @@
+.button {
+    @apply px-5 py-1.5 border border-indigo-300 rounded-lg text-lg shadow-xl;
+
+    &:hover,
+    &:focus {
+        @apply text-white bg-indigo-300 border-indigo-300 outline-none;
+    }
+}
+
+.active {
+    @apply px-5 py-1.5 rounded-lg text-lg text-white bg-indigo-300 shadow-xl;
+    &:hover,
+    &:focus {
+        @apply text-white bg-indigo-300 border-indigo-300 outline-none;
+    }
+}

@@ -1,0 +1,9 @@
+.container {
+    @apply flex flex-row justify-between flex-wrap mb-5;
+
+    .left__block {
+      button {
+        @apply mr-2;
+      }
+    }
+}

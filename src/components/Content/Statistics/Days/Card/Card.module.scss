@@ -1,0 +1,41 @@
+.container {
+    @apply bg-indigo-50 rounded-xl p-3 flex flex-col justify-between mx-1 mb-3 lg:mx-0 lg:mb-0;
+    // min-width: 150px;
+    min-height: 200px;
+    width: 30%;
+
+    &:hover {
+        @apply shadow-lg;
+    }
+
+    .top__block {
+        @apply flex flex-col mb-3;
+
+        .day__week {
+            @apply font-medium text-lg;
+        }
+
+        .day__month {
+            @apply font-light text-base;
+        }
+    }
+
+    .middle__block {
+      @apply mb-3;
+        width: 45px;
+        height: 45px;
+    }
+
+    .bottom__block {
+        @apply flex flex-col;
+
+        .temp {
+            @apply font-medium text-lg text-indigo-500;
+        }
+
+        .temp__feeling,
+        .precipitation {
+            @apply font-light text-base;
+        }
+    }
+}

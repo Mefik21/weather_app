@@ -1,0 +1,31 @@
+.select {
+    [class$='-control'] {
+        @apply h-4 w-60 mr-3 cursor-pointer border border-indigo-700 rounded-2xl;
+        &:hover {
+            @apply border-indigo-500 shadow-xl shadow-indigo-50;
+        }
+    }
+
+    [class$='-placeholder'] {
+        @apply text-indigo-700;
+    }
+
+    [class$='-menu'] {
+        @apply w-60 border-none;
+    }
+
+    [class$='-Input'] {
+        @apply text-indigo-700;
+    }
+
+    [class$='-indicatorSeparator'] {
+        @apply bg-indigo-700;
+    }
+
+    svg {
+        @apply text-indigo-700;
+        &:hover {
+            @apply text-indigo-400;
+        }
+    }
+}

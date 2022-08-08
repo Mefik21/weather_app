@@ -1,0 +1,39 @@
+.container {
+    @apply w-1/3 bg-indigo-200 border-zinc-300 rounded-3xl p-7 relative flex flex-col mr-0 mb-5 md:mr-5 lg:mb-0;
+    // z-index: 100;
+    min-width: 300px;
+    min-height: 300px;
+
+    &::before {
+        @apply bg-indigo-300 w-full h-full absolute shadow-xl rounded-3xl;
+        content: '';
+        top: 7px;
+        left: 0;
+        z-index: -1;
+    }
+
+    .top__block {
+        @apply flex flex-row justify-between mb-auto items-center;
+
+        img {
+            width: 120px;
+            height: 120px;
+        }
+
+        &_info {
+            @apply flex flex-col;
+        }
+
+        &_temp {
+            @apply text-8xl text-indigo-500;
+        }
+
+        &_day {
+            @apply text-4xl font-light;
+        }
+    }
+
+    .bottom__block {
+        @apply flex flex-col justify-between items-start text-2xl font-light;
+    }
+}
